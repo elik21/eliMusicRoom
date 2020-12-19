@@ -1,4 +1,4 @@
-package com.example.musicroom.apiclient;
+package com.example.musicroom.ApiClient;
 
 
 
