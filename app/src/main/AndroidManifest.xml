@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.musicroom">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Activities.WeekView.RoomSchedule"
+            android:theme="@style/Theme.AppCompat"
+            android:label="Room Schedule"/>
+        <activity
+            android:name=".Activities.AddRoom"
+            android:theme="@style/Theme.AppCompat"
+            android:label="Add Room"/>
+        <activity
+            android:name=".Activities.userProfile"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".Activities.Settings"
+            android:theme="@style/Theme.AppCompat"
+            android:label="Settings"/>
+        <activity
+            android:name=".Activities.FacebookLogin"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="Facebook Login"/>
+        <activity
+            android:name=".Chat.ChatActivities.MessageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+           />
+        <activity
+            android:name=".Chat.ChatActivities.ChatActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+           />
+        <activity
+            android:name=".Activities.SelectedItemActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".Activities.WeekView.BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity android:configChanges=".BaseActivity" /> -->
+        <activity
+            android:name=".Activities.WeekView.asynchroneusActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:label="Add Events"/>
+        <activity android:name=".Fragments.RoomActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="fullSensor"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+</manifest>

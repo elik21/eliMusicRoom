@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202333</color>
+    <color name="colorPrimaryDark">#23D8E2</color>
+    <color name="colorAccent">#A76C11</color>
+    <color name="event_color_01">#03EFF8</color>
+
+    <color name="event_color_02">#f57f68</color>
+
+    <color name="event_color_03">#87d288</color>
+
+    <color name="event_color_04">#B38137</color>
+
+    <color name="toolbar">#efefef</color>
+
+    <color name="toolbar_text">#8FD02424</color>
+
+    <color name="accent">#96F804</color>
+</resources>

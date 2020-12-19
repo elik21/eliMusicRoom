@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SelectedItemActivity">
+
+    <ImageView
+
+        android:id="@+id/imageView3"
+        android:layout_width="119dp"
+        android:layout_height="105dp"
+        android:tag="1"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="172dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:tag="2"
+        android:text="עיר"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/Schedule"
+        android:layout_width="143dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20dp"
+        android:text="Schedule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Admin_name" />
+
+    <EditText
+        android:id="@+id/Admin_name"
+        android:layout_width="154dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="116dp"
+        android:tag="2"
+        android:text="שם האחראי"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/selected_room"
+        android:layout_width="170dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:tag="2"
+        android:text="שם החדר"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        tools:layout_editor_absoluteY="23dp" />
+
+    <ImageButton
+        android:id="@+id/waze"
+        android:layout_width="75dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="44dp"
+        android:background="#64DD17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/selected_room" />
+
+    <EditText
+        android:id="@+id/site1"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Site"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waze" />
+
+    <EditText
+        android:id="@+id/fbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/site1" />
+
+    <EditText
+        android:id="@+id/adress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="כתובת"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity" />
+
+    <EditText
+        android:id="@+id/country1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ארץ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adress1" />
+
+    <EditText
+        android:id="@+id/activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="שעות פעילות"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fbook" />
+
+    <EditText
+        android:id="@+id/room_type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Price Type A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country1" />
+
+    <EditText
+        android:id="@+id/room_type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Price Type B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_type1" />
+
+    <EditText
+        android:id="@+id/room_type3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Price Type c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_type2" />
+
+    <Spinner
+        android:id="@+id/room_types"
+        android:layout_width="136dp"
+        android:layout_height="43dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

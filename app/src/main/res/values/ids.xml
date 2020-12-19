@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="video_price" type="id" />
+    <item name="price2" type="id" />
+    <item name="studio_hour_price" type="id" />
+    <item name="recording_price" type="id" />
+    <item name="facebookPage" type="id" />
+    <item name="site" type="id" />
+    <item name="imageUrl2" type="id" />
+    <item name="adress" type="id" />
+    <item name="city1" type="id" />
+    <item name="country" type="id" />
+    <item name="admin_name1" type="id" />
+    <item name="roon_name_info" type="id" />
+    <item name="editTextTextPersonName18" type="id" />
+    <item name="live_record" type="id" />
+    <item name="startHour" type="id" />
+    <item name="endHour" type="id" />
+    <item name="price" type="id" />
+    <item name="price1" type="id" />
+    <item name="guitartv" type="id" />
+</resources>

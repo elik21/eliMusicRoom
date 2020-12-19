@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/time"
+    android:layout_width="match_parent"
+     android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".Activities.BaseActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sum41">
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="392dp"
+            android:layout_height="57dp"
+            android:background="#0043A4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="53dp">
+
+            <EditText
+                android:id="@+id/event_name"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00CF91"
+                android:inputType="textPersonName"
+                android:text="Title"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/day1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00CF91"
+                android:hint="Day"
+                android:inputType="textPersonName"
+
+                android:text="Day"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/month1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00CF91"
+
+                android:hint="Month"
+                android:inputType="textPersonName"
+                android:text="Month"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/year1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00CF91"
+                android:hint="Year"
+                android:inputType="textPersonName"
+                android:text="Year"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="400dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#AF1414"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00CF91"
+                    android:text="Time"
+                    android:textColor="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/duration"
+                    android:layout_width="29dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00CF91"
+                    android:inputType="textPersonName"
+                    android:text="Length"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00CF91"
+                    android:text="Hour"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00CF91"
+                    android:text="Minute"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0C2EEA"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#CA3232"
+                    android:text="Remove an item"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/add_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:background="#DF9B10"
+                    android:text="Add an Event"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.alamkanak.weekview.WeekView
+
+            android:id="@+id/weekView"
+            android:layout_width="391dp"
+            android:layout_height="288dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/design_default_color_error"
+            app:columnGap="8dp"
+            app:dayBackgroundColor="#05000000"
+            app:eventTextColor="@android:color/white"
+            app:headerColumnBackground="#ffffffff"
+            app:headerColumnPadding="8dp"
+            app:headerColumnTextColor="#1F79C0"
+            app:headerRowBackgroundColor="@color/toolbar"
+            app:headerRowPadding="12dp"
+            app:hourHeight="60dp"
+
+            app:hourSeparatorColor="#1273A0"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+            app:noOfVisibleDays="3"
+            app:textSize="12sp"
+            app:todayBackgroundColor="#1848adff"
+            app:todayHeaderTextColor="@color/accent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="14dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

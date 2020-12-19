@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Fragments.MainMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/user_details"
+        android:layout_width="262dp"
+        android:layout_height="65dp"
+
+        android:layout_marginTop="28dp"
+        android:background="@drawable/profile_button"
+        android:text="My Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username1" />
+
+            <Button
+                android:id="@+id/main_list"
+                android:layout_width="266dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/profile_button"
+                android:text="All Rooms"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_details" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="262dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_button"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekview" />
+
+    <Button
+        android:id="@+id/weekview"
+        android:layout_width="262dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_button"
+        android:text="Week View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_list" />
+
+    <Button
+        android:id="@+id/logout1"
+        android:layout_width="262dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_button"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings" />
+
+    <Button
+        android:id="@+id/add_room"
+        android:layout_width="262dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_button"
+        android:text="Add Room"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout1" />
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="155dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/username1"
+                android:layout_width="155dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="4dp"
+                android:text="User Name"
+                android:textColor="#FFA000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_icon" />
+
+            <ImageView
+                android:id="@+id/profile_im"
+                android:layout_width="66dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintEnd_toStartOf="@+id/app_icon"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

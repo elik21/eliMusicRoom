@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sum41"
+    tools:context=".Fragments.adminRegActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:hint="Admin name"
+                android:inputType="textPersonName"
+                android:text="Admin Name"
+                android:textColor="@color/colorPrimaryDark"
+
+                android:textColorHint="#00BCD4"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:hint="Password"
+                android:inputType="textPersonName"
+                android:text="Password"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#00BCD4"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/experience"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:hint="experience"
+                android:inputType="textPersonName"
+                android:text="experience"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#00BCD4"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:hint="Phone"
+                android:inputType="textPersonName"
+                android:text="Phone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#00BCD4"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/admin_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F44336"
+                android:hint="age"
+                android:inputType="textPersonName"
+                android:text="Admin Age"
+                android:textColor="#1C89B9"
+                android:textColorHint="#00BCD4"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/permission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F44336"
+                android:text="Admin"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark" />
+
+            <Spinner
+                android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:theme="@style/AppTheme" />
+
+            <Spinner
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:theme="@style/AppTheme" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/reg_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/accent"
+
+                android:text="Register" />
+
+            <Button
+                android:id="@+id/bgoogle"
+                android:layout_width="197dp"
+                android:layout_height="match_parent"
+                android:text="continue with google" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
+
+
+

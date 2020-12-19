@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+   >
+    <item android:id="@+id/chat"
+
+        android:title="Chat"
+
+        android:orderInCategory="100"
+
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/logout"
+
+        android:title="logout"
+
+        android:orderInCategory="100"
+
+        android:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="always"
+        android:iconTint="@color/colorAccent"
+        android:orderInCategory="100"
+        tools:ignore="AppCompatResource"
+        android:visible="true"
+        app:theme="@style/AppSearchView"
+        />
+<item
+    android:id="@+id/Week_view"
+    android:icon="@drawable/ic_baseline_calendar_view_day_24"
+    android:title="Week View"
+    android:orderInCategory="100"
+    android:showAsAction="always"
+    tools:ignore="AppCompatResource" />
+</menu>

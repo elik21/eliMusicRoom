@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B82C2C"
+    tools:context=".Activities.userProfile">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#D5B617"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="User Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+    <EditText
+        android:id="@+id/phone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D5B617"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/email2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D5B617"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone2" />
+
+    <EditText
+        android:id="@+id/adress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D5B617"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Adress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email2" />
+
+    <EditText
+        android:id="@+id/imageUrl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D5B617"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="imageUrl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adress2" />
+
+    <EditText
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D5B617"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageUrl3" />
+
+    <EditText
+        android:id="@+id/age2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D5B617"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AccountType" />
+
+    <EditText
+        android:id="@+id/permission2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#D5B617"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Permission"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age2" />
+
+    <EditText
+        android:id="@+id/exp"
+        android:layout_width="313dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:background="#D5B617"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Experience"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/permission2" />
+
+    <TextView
+        android:id="@+id/username3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="29dp"
+        android:text="User name"
+        app:layout_constraintStart_toEndOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+    <TextView
+        android:id="@+id/phonoh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Phone"
+        app:layout_constraintStart_toEndOf="@+id/phone2"
+        app:layout_constraintTop_toBottomOf="@+id/username3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="AccountType"
+        app:layout_constraintStart_toEndOf="@+id/AccountType"
+        app:layout_constraintTop_toBottomOf="@+id/fb" />
+
+    <TextView
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/facebook"
+        app:layout_constraintTop_toBottomOf="@+id/imageurl" />
+
+    <TextView
+        android:id="@+id/imageurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="ImageUrlh"
+        app:layout_constraintStart_toEndOf="@+id/imageUrl3"
+        app:layout_constraintTop_toBottomOf="@+id/adresshh" />
+
+    <TextView
+        android:id="@+id/adresshh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Adress"
+        app:layout_constraintStart_toEndOf="@+id/adress2"
+        app:layout_constraintTop_toBottomOf="@+id/mailhint" />
+
+    <TextView
+        android:id="@+id/mailhint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Email"
+        app:layout_constraintStart_toEndOf="@+id/email2"
+        app:layout_constraintTop_toBottomOf="@+id/phonoh" />
+
+    <TextView
+        android:id="@+id/AccountType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D5B617"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="AccontType"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebook" />
+
+    <TextView
+        android:id="@+id/ageh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:text="Age"
+        app:layout_constraintStart_toEndOf="@+id/age2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/perm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:text="Permission"
+        app:layout_constraintStart_toEndOf="@+id/permission2"
+        app:layout_constraintTop_toBottomOf="@+id/ageh" />
+
+    <TextView
+        android:id="@+id/exper1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="309dp"
+        android:text="Experience"
+        app:layout_constraintStart_toEndOf="@+id/perm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="112dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:background="#751E1E"
+        android:src="@color/accent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

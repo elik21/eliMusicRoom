@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/greenday"
+    android:orientation="vertical"
+    tools:context=".Fragments.LoginActivity"
+    android:id="@+id/logAct">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/to_facebook"
+                android:layout_width="319dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="4dp"
+                android:background="#154788"
+                android:text="Go To Facebook Login"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
+
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="417dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="28dp"
+
+                android:background="@color/accent"
+                android:inputType="textPersonName"
+                android:text="Password"
+                android:textColor="#02234a"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Email1"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/Email1"
+                android:layout_width="488dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="32dp"
+                android:background="#023af4"
+                android:inputType="textPersonName"
+                android:text="Email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="421dp"
+                android:layout_height="121dp"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/logo2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="375dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/to_facebook">
+
+                <Button
+                    android:id="@+id/regAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:text="Register as admin"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/regClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:text="Register as client"
+                    android:textSize="14sp"
+                    tools:layout_conversion_absoluteHeight="48dp"
+                    tools:layout_conversion_absoluteWidth="158dp"
+                    tools:layout_editor_absoluteX="158dp"
+                    tools:layout_editor_absoluteY="526dp" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:text="Login"
+                    android:textSize="14sp"
+                    tools:layout_conversion_absoluteHeight="48dp"
+                    tools:layout_conversion_absoluteWidth="88dp" />
+
+            </LinearLayout>
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="298dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.59"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password1">
+
+            </com.google.android.gms.common.SignInButton>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

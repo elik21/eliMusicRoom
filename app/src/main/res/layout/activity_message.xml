@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".Chat.ChatActivities.MessageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="405dp"
+        android:layout_height="102dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:id="@+id/imageV"
+            android:layout_width="82dp"
+            android:layout_height="84dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+        <EditText
+            android:id="@+id/user1"
+            android:layout_width="89dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageV"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyc_view"
+        android:layout_width="match_parent"
+        android:layout_height="416dp" />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/text_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toLeftOf="@+id/btn_send" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/ic_send" />
+
+
+    </RelativeLayout>
+</LinearLayout>

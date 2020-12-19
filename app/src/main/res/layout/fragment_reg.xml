@@ -1,0 +1,162 @@
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/sum41"
+    tools:context=".Fragments.ClientRegAct">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@color/colorPrimaryDark"
+                android:hint="Client name"
+                android:inputType="textPersonName"
+                android:textColor="@color/event_color_02"
+                android:textColorHint="#6200EA"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/accent"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColor="#6200EA"
+                android:textColorHighlight="#BC1B1B"
+                android:textColorHint="#6200EA"
+                android:textColorLink="#FFD600"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/accent"
+                android:hint="Password"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#6200EA"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+
+                android:background="@color/colorPrimaryDark"
+                android:hint="Phone"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#00BCD4"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:hint="Id"
+                android:inputType="textPersonName"
+                android:textColor="#00BCD4"
+                android:textColorHint="#00BCD4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/day1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark" />
+
+            <Spinner
+                android:id="@+id/month1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark" />
+
+            <Spinner
+                android:id="@+id/year1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:hint="Age"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#00BCD4"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/permission1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="Client" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/reg_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/accent"
+
+                android:text="Register" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
+
+
+
